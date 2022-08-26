@@ -1,5 +1,6 @@
 package com.wujianbiao.diet.webapp.controller;
 
+import com.wujianbiao.diet.webapp.annotation.AccessControl;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class DietWebapp {
 
     @GetMapping("test")
+    @AccessControl
     public String test() {
         return "Hello World!";
     }
