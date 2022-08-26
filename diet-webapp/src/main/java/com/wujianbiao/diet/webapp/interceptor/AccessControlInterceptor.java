@@ -20,7 +20,7 @@ public class AccessControlInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) {
-        System.out.println("test");
+        System.out.println("preHandle");
         if (!(handler instanceof HandlerMethod)) {
             return true;
         }
