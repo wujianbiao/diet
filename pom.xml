@@ -20,6 +20,7 @@
         <module>diet-service</module>
         <module>diet-model</module>
         <module>diet-core</module>
+        <module>diet-dao</module>
     </modules>
 
     <dependencyManagement>
@@ -46,6 +47,12 @@
             <dependency>
                 <groupId>com.wujianbiao.diet</groupId>
                 <artifactId>diet-model</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.wujianbiao.diet</groupId>
+                <artifactId>diet-dao</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
 
@@ -77,6 +84,14 @@
                 <version>2.7.3</version>
                 <scope>test</scope>
             </dependency>
+
+            <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>8.0.30</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
